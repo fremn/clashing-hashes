@@ -1,0 +1,25 @@
+<head>
+	<link rel="stylesheet" href="application.css" type="text/css" />
+</head>
+
+<body>
+	<h1>Welcome to the Future <%=@name%> & <%=@naam%> </h1>
+	  
+	<h2> Using Views</h2>
+	<% if @show_description %>
+		<p>This is the description</p>
+	<% end %>
+		
+
+	<form action="/twitter" method="post">
+		 <div>
+        <label for="hash1">The First Hash</label>
+        <input type="text" name="hash1" id="hash1" />
+    </div>
+    <div>
+        <label for="hash2">Second Hash</label>
+        <input type="text" name="hash2" id="hash2" />
+      	<button type="submit">HashFight</button>
+    </div>
+	</form>	
+</body>
