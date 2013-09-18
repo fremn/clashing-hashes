@@ -1,25 +1,33 @@
+<html>
 <head>
 	<link rel="stylesheet" href="application.css" type="text/css" />
+
+	<script src="js/vendor/custom.modernizr.js"></script>
+
 </head>
 
 <body>
-	<h1>Welcome to the Future <%=@name%> & <%=@naam%> </h1>
-	  
-	<h2> Using Views</h2>
-	<% if @show_description %>
-		<p>This is the description</p>
-	<% end %>
+	
 		
-
-	<form action="/twitter" method="post">
-		 <div>
-        <label for="hash1">The First Hash</label>
-        <input type="text" name="hash1" id="hash1" />
-    </div>
-    <div>
-        <label for="hash2">Second Hash</label>
-        <input type="text" name="hash2" id="hash2" />
-      	<button type="submit">HashFight</button>
-    </div>
-	</form>	
+	<div class="row">
+		<div class="large-12 columns">
+			<h1 class="center">Welcome to #HashFight</h1>  
+			<h2 class="center">Choose your Hashes</h2>
+			
+			<form action="/twitter" method="post">
+				 <div class ="large-6 columns">
+		        <label class="center" for="hash1">Hash A</label>
+		        <input type="text" name="hash1" id="hash1" />
+		    </div>
+		    <div class ="large-6 columns">
+		        <label class="center" for="hash2">Hash B</label>
+		        <input type="text" name="hash2" id="hash2" />
+		    </div>
+		 		<div class="center">
+		    	<button type="submit" class="small_button">HashFight</button>
+		    </div>
+			</form>	
+		</div>
+	</div>
 </body>
+</html>

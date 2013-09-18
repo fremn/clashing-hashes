@@ -1,4 +1,19 @@
+<head>
+	<link rel="stylesheet" href="application.css" type="text/css" />
 
-<h4>#{params[:hash1]} Vs #{params[:hash2]}</h4>
+  <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+	<div class="row">
+		<div class="large-12 columns">
+			
+			<h1> #<%=params[:hash1] %> Vs #<%=params[:hash2]%></h2>
 
-<h5>Your form has been submitted</h5>"
+			<h2> This round was won by <%=@tweets%> </h2>
+
+			<a href="/" class="button"> play again </a>
+
+
+		</div>
+	</div>
+</body>
