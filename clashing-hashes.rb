@@ -4,5 +4,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-  'hello world'
+@name = 'Fremen'
+@naam = "Karinn"
+
+  erb :index
+  
 end
