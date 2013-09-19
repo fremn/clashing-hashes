@@ -15,18 +15,22 @@ form {
 	margin-top:20px;
 }
 
-h1
 
 h1 {
 	font-family: 'Stalinist One', cursive;
-	color:#eeeeee;
-}
-
-h2 {	
-
-	font-family: 'Limelight', cursive;
 	color: rgb(218, 62, 117);
 }
+
+label, h2 {	
+
+	font-family: 'Limelight', cursive;
+	color: #4bacc6;
+}
+
+label {
+	font-size: 1.5em;
+}
+
 a.button {
 	margin-top: 10%;
 }
