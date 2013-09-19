@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: #f28c3a;
+	background-color: #edbdcf;
 }
 
 form {
@@ -15,13 +15,17 @@ form {
 	margin-top:20px;
 }
 
+h1
+
 h1 {
 	font-family: 'Stalinist One', cursive;
+	color:#eeeeee;
 }
 
-h2 {
-	
+h2 {	
+
 	font-family: 'Limelight', cursive;
+	color: rgb(218, 62, 117);
 }
 a.button {
 	margin-top: 10%;
