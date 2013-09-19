@@ -2,7 +2,9 @@ require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
-require 'lib/twitter.rb'
+require 'twitter'
+require_relative 'lib/twitter.rb'
+
 
 get '/' do
   @show_description = false
@@ -13,6 +15,4 @@ end
 post '/twitter' do
 
   erb :twitter
-  @tweets = []
-  @tweets << status: "I like pie"
 end
