@@ -7,12 +7,15 @@
 	<div class="row">
 		<div class="large-12 columns">
 			
-			<h1> #<%=params[:login1] %> Vs #<%=params[:login2]%></h2>
+			<h1> #<%=@user1 %> Vs #<%=@user2%></h2>
 
-			<h2> This round was won by <%=@results%> </h2>
+			<h2> This round was won by <%=@result%> </h2>
 
 			<a href="/" class="button"> play again </a>
 
 		</div>
+
+		<div><%= params%></div>
+
 	</div>
 </body>

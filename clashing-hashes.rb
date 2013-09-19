@@ -3,7 +3,6 @@ require 'bundler/setup'
 require 'sinatra'
 require 'sinatra/reloader'
 require 'twitter'
-require_relative 'lib/twitter.rb'
 require_relative 'lib/follower_clash'
 
 
@@ -14,9 +13,10 @@ get '/' do
 end
 
 post '/twitter' do
-  @user1  = params["login1"]
-  @user2  = params["login2"]
-  @result = FollowerClash::Comparer.new(@user1, @user2)
+  @user1  = FollowerClash::User.new(params["login1"])
+  @user2  = FollowerClash::User.new(params["login2"])
+
+  @result = FollowerClash::Comparer.new(@user1, @user2).compare
 
   erb :result
 end
