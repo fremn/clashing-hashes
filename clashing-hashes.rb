@@ -14,6 +14,9 @@ get '/' do
 end
 
 post '/twitter' do
+  @user1  = params["login1"]
+  @user2  = params["login2"]
+  @result = FollowerClash::Comparer.new(@user1, @user2)
 
-  erb :twitter
+  erb :result
 end
